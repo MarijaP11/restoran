@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h1 style="font-family: Arial">Mobiteli</h1>
+
+<form method="post" action="/naruci">
+    <input type="text" name="ime" placeholder="Unesi ime i prezime">
+    <br>
+
+    <input type="text" name="telefon" placeholder="Unesi broj telefona">
+    <br>
+
+    <input type="text" name="adresa" placeholder="Unesi adresu">
+    <br>
+
+    <select name="mobiteli">
+      <option value="samsung">Samsung</option>
+      <option value="i-phone">I phone</option>
+      <option value="huawei">Huawei</option>
+      <option value="lg">LG</option>
+    </select>
+
+    <br>
+
+    <select name="tarife">
+      <option value="obiteljska">Obiteljska</option>
+      <option value="ekipna">Ekipna</option>
+      <option value="neograničena">Neograničena</option>
+      <option value="na-bonove">Na bonove</option>
+    </select>
+
+    <br>
+
+    <button type="submit">Naruči!</button>
+</form>
+
+
+{% endblock content %}
